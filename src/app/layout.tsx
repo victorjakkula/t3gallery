@@ -18,7 +18,7 @@ function TopNav() {
       </div>
       <div>
        
-          About
+          Sign In
         
       </div>
     </nav>
