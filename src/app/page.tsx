@@ -6,6 +6,8 @@ const mockUrl = ["https://w6l4i72ztb.ufs.sh/f/tK37us19w7TVqTTr9HStGkQF5X1f3IWceT
 "https://w6l4i72ztb.ufs.sh/f/tK37us19w7TV7UA5s0C3sbfLTZlqHNvnu4RYE1ptgMcxO09o",
 "https://w6l4i72ztb.ufs.sh/f/tK37us19w7TVvPhJyxgbj1mCORYN2pfPdk3AMicXgVoKqsWz"
  ]
+
+ export const dynamic="force-dynamic"
   const mockImage = mockUrl.map((url, index) => ({
     id: index+1,
     url,
