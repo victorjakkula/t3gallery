@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { db } from "pnpm/server/db";
-export const dynamic="force-dynamic"
+export const dynamic="force-dynamic";
 const mockUrl = ["https://w6l4i72ztb.ufs.sh/f/tK37us19w7TVqTTr9HStGkQF5X1f3IWceTErA2OJudHY7jwg",
 "https://w6l4i72ztb.ufs.sh/f/tK37us19w7TV3CjvzYlPcjWltvwBb2RTFrGn8p3NYZd0J5XM",
 "https://w6l4i72ztb.ufs.sh/f/tK37us19w7TVSB18IfmsHTFheVxOwZjBgQPS6Gr8vdYo57MX",
