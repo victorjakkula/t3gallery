@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic"; 
+import { revalidatePath } from "next/cache";
 import Link from "next/link";
 import { db } from "pnpm/server/db";
 export const revalidate = 0; 
@@ -17,7 +19,8 @@ const mockUrl = ["https://w6l4i72ztb.ufs.sh/f/tK37us19w7TVqTTr9HStGkQF5X1f3IWceT
 export default async function HomePage() {
   const posts=await db.query.posts.findMany()
   console.log(posts)
-  export const dynamic="force-dynamic";
+   const dynamic="force-dynamic";
+   revalidatePath("/");
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
