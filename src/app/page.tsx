@@ -1,7 +1,7 @@
 export const dynamic = "force-dynamic"; // ✅ Correct way
 
 import Link from "next/link";
-import { db } from "pnpm/server/db";
+import {db} from "pnpm/server/db/index";
 
 
 
