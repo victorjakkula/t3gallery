@@ -1,6 +1,7 @@
+export const dynamic = "force-dynamic"; // ✅ Correct way
+
 import Link from "next/link";
 import { db } from "pnpm/server/db";
-const dynamic = "force-dynamic";
 
 const mockUrl = [
   "https://w6l4i72ztb.ufs.sh/f/tK37us19w7TVqTTr9HStGkQF5X1f3IWceTErA2OJudHY7jwg",
@@ -16,9 +17,6 @@ const mockImage = mockUrl.map((url, index) => ({
 }));
 
 export default async function HomePage() {
-  // ✅ Make it dynamic inside the function
-  
-  
   const posts = await db.query.posts.findMany();
   console.log(posts);
 
