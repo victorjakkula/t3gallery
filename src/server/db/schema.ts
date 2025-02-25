@@ -1,12 +1,14 @@
 import { pgTable, serial, text, timestamp, index } from 'drizzle-orm/pg-core';
 import { sql } from "drizzle-orm";
+import { url } from 'inspector';
 
 // Define the `posts` table
-export const posts = pgTable(
+export const images = pgTable(
   "posts",
   {
     id: serial("id").primaryKey(),
     name: text("name").notNull(),
+    url: text("url").notNull(),
     createdAt: timestamp("created_at", { withTimezone: true })
       .default(sql`CURRENT_TIMESTAMP`)
       .notNull(),
