@@ -1,5 +1,6 @@
 import { SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import { SignedIn } from "@clerk/nextjs";
+import { UploadButton } from "pnpm/utils/uploadthing";
 import React from "react";
   
 
@@ -11,13 +12,14 @@ export default function TopNav() {
             Gallary
           
         </div>
-        <div>
+        <div className="flex flex-row items-center gap-4">
          
             <SignedOut>
                 <SignInButton />
             </SignedOut>
             <SignedIn>
-                <UserButton />
+              <UploadButton endpoint={"imageUploader"} />
+              <UserButton />
             </SignedIn>
           
         </div>

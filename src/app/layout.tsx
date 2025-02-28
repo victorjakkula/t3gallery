@@ -1,3 +1,5 @@
+import "@uploadthing/react/styles.css";
+
 import "pnpm/styles/globals.css";
  
 import { ClerkProvider } from "@clerk/nextjs";
