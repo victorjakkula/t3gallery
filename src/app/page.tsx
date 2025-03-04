@@ -16,7 +16,7 @@ export default async function HomePage() {
       <SignedIn>
       <div className="flex flex-wrap gap-4">
         
-        {[...posts, ...posts, ...posts].map((image) => (
+        {posts.map((image) => (
           <div key={image.id} className="w-48">
             <img src={image.url} />
             <div>{image.name}</div>
